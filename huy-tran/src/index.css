@@ -13,7 +13,8 @@ body {
 
 /* Typography */
 
-.headline-1 {
+.headline-1,
+.headline-2 {
   @apply max-w-max;
   background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
   background-clip: text;
@@ -23,6 +24,10 @@ body {
 
 .headline-1 {
   @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+}
+
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
 /* Utilities */
@@ -42,6 +47,10 @@ body {
 
 .img-cover {
   @apply w-full h-full object-cover;
+}
+
+.section {
+  @apply pt-20 lg:pt-32;
 }
 
 /* Components */
@@ -96,4 +105,14 @@ body {
 
 .btn-outline {
   @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
+}
+
+.image-btn {
+  @apply rounded-lg mr-5 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400;
+}
+
+/* Skill */
+
+.skill-card-container {
+  @apply grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))];
 }
