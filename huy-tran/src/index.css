@@ -30,6 +30,10 @@ body {
   @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
+.title-1 {
+  @apply text-[22px] font-normal;
+}
+
 /* Utilities */
 
 .material-symbols-rounded {
@@ -39,6 +43,10 @@ body {
 
 .container {
   @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.project-container {
+  @apply grid gap-y-6;
 }
 
 .img-box {
@@ -81,14 +89,17 @@ body {
   @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500;
 }
 
-/* Button */
+.contact-link {
+  @apply md:hidden;
+}
 
+/* Button */
 .btn {
   @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
 }
 
 .btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+  @apply bg-zinc-50 hover:bg-zinc-200 text-zinc-900 active:bg-zinc-50/80 max-md:hidden md:justify-self-end;
 }
 
 .btn .material-symbols-rounded {
@@ -108,11 +119,27 @@ body {
 }
 
 .image-btn {
-  @apply rounded-lg mr-5 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400;
+  @apply rounded-lg bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400;
+}
+
+.submit-btn {
+  @apply max-w-full w-full justify-center;
 }
 
 /* Skill */
-
 .skill-card-container {
   @apply grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))];
+}
+
+/* Text Field */
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
 }

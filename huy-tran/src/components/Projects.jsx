@@ -48,8 +48,8 @@ const Projects = () => {
   return (
     <section id="projects" className="section">
       <div className="container">
-        <h2 className="headline-2">My Portfolio</h2>
-        <div className="">
+        <h2 className="headline-2 mb-4">My Portfolio</h2>
+        <div className="project-container">
           {projectItem.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
