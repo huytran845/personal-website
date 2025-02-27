@@ -27,7 +27,12 @@ const Hero = () => {
             Excited to adapt to new technologies and environments.
           </h2>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download Resume" icon="download" />{" "}
+            <ButtonPrimary
+              href="/images/resume-huy.pdf"
+              label="Download Resume"
+              icon="download"
+              download="Resume, Huy Tran.pdf"
+            />{" "}
             <ButtonOutline
               href="#about"
               label="Scroll down"
