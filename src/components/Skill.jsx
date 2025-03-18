@@ -68,6 +68,11 @@ const skillItem = [
     desc: "Backend Framework",
   },
   {
+    imgSrc: "/images/firebase.svg",
+    label: "Firebase",
+    desc: "Backend as a Service",
+  },
+  {
     imgSrc: "/images/tailwindcss.svg",
     label: "TailwindCSS",
     desc: "User Interface",

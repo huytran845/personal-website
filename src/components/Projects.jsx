@@ -11,13 +11,14 @@ const projectItem = [
   },
   {
     imgSrc: [
-      "/images/todo-app-1.png",
-      "/images/todo-app-2.png",
-      "/images/todo-app-3.png",
+      "/images/coffeefied-1.png",
+      "/images/coffeefied-2.png",
+      "/images/coffeefied-3.png",
+      "/images/coffeefied-4.png",
     ],
-    title: "To Do app",
-    tags: ["Web-design", "SPA"],
-    projectLink: "https://github.com/huytran845/personal-website",
+    title: "Caffeine Tracking app",
+    tags: ["Web-design", "SPA", "Firebase"],
+    projectLink: "https://github.com/huytran845/coffee-tracking-app",
   },
   {
     imgSrc: ["/images/portfolio.png"],
