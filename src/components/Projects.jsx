@@ -6,8 +6,21 @@ const projectItem = [
     imgSrc: ["/images/cssi-portal-demo.mp4"],
     title: "CSSI Web Portal",
     tags: ["Web-design", "SPA", "API"],
-    projectLink:
+    gitHubLink:
       "https://github.com/McAlvain-Colin/team_three_star/tree/dev/cssi-web-portal",
+  },
+  {
+    imgSrc: [
+      "/images/fantasktic-1.png",
+      "/images/fantasktic-2.png",
+      "/images/fantasktic-3.png",
+      "/images/fantasktic-4.png",
+      "/images/fantasktic-5.png",
+    ],
+    title: "Fantasktic AI Task and Project Management App",
+    tags: ["Web-design", "SPA", "Appwrite", "AI"],
+    gitHubLink: "https://github.com/huytran845/ai-task-manager",
+    projectLink: "https://fantasktic.vercel.app",
   },
   {
     imgSrc: [
@@ -18,13 +31,8 @@ const projectItem = [
     ],
     title: "Caffeine Tracking app",
     tags: ["Web-design", "SPA", "Firebase"],
-    projectLink: "https://github.com/huytran845/coffee-tracking-app",
-  },
-  {
-    imgSrc: ["/images/portfolio.png"],
-    title: "Portfolio Website",
-    tags: ["Web-design", "SPA"],
-    projectLink: "https://github.com/huytran845/personal-website",
+    gitHubLink: "https://github.com/huytran845/coffee-tracking-app",
+    projectLink: "https://coffeefied.netlify.app",
   },
   {
     imgSrc: [
@@ -35,13 +43,13 @@ const projectItem = [
     ],
     title: "Hackathon RPG Game",
     tags: ["Game-design", "Godot"],
-    projectLink: "https://github.com/huytran845/hackathon-HTTYK",
+    gitHubLink: "https://github.com/huytran845/hackathon-HTTYK",
   },
   {
     imgSrc: ["/images/goldfish-docker.png"],
     title: "Automated Go-Fish",
     tags: ["Deployment", "Testing"],
-    projectLink: "https://github.com/huytran845/CS-333-Final-Project",
+    gitHubLink: "https://github.com/huytran845/CS-333-Final-Project",
   },
 ];
 
@@ -51,15 +59,18 @@ const Projects = () => {
       <div className="container">
         <h2 className="headline-2 mb-4">My Portfolio</h2>
         <div className="project-container">
-          {projectItem.map(({ imgSrc, title, tags, projectLink }, key) => (
-            <ProjectCard
-              key={key}
-              imgSrc={imgSrc}
-              title={title}
-              tags={tags}
-              projectLink={projectLink}
-            />
-          ))}
+          {projectItem.map(
+            ({ imgSrc, title, tags, gitHubLink, projectLink }, key) => (
+              <ProjectCard
+                key={key}
+                imgSrc={imgSrc}
+                title={title}
+                tags={tags}
+                gitHubLink={gitHubLink}
+                projectLink={projectLink}
+              />
+            )
+          )}
         </div>
       </div>
     </section>

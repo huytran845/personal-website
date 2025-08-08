@@ -1,5 +1,5 @@
 // Node Modules
-import { ReactLenis, useLenis } from "lenis/react";
+import { ReactLenis } from "lenis/react";
 
 // Components
 import Header from "./components/Header";
